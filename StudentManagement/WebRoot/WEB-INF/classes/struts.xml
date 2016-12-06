@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="default"  extends="struts-default" >
+		<action name="studentlogin" class="studentAction" method="login">
+			<result name="success">/index.jsp</result>		
+		</action>
+		<action name="studentlogout" class="studentAction" method="logout">
+			<result name="success">/login.jsp</result>		
+		</action>
+		<action name="studentlistPlan" class="studentAction" method="listPlan">
+			<result name="success">/plan.jsp</result>		
+		</action>
+		<action name="studentlistPlanDetail" class="studentAction" method="listPlanDetail">
+			<result name="success">/success.jsp</result>		
+		</action>
+		<action name="studentlistAllCompulsory" class="studentAction" method="listAllCompulsory">
+			<result name="success">/compulsorylist.jsp</result>		
+		</action>
+		<action name="studentlistAllElective" class="studentAction" method="listAllElective">
+			<result name="success">/elective.jsp</result>		
+		</action>
+		<action name="studentlistAllPractice" class="studentAction" method="listAllPractice">
+			<result name="success">/practice.jsp</result>		
+		</action>
+		<action name="studentgetInfo" class="studentAction" method="getInfo">
+			<result name="success">/studentinfo.jsp</result>		
+		</action>
+		<action name="studentupdateInfo" class="studentAction" method="updateInfo">
+			<result name="success">/studentinfo.jsp</result>		
+		</action>
+		
+		<action name="managerlogin" class="managerAction" method="login">
+			<result name="success">/managerindex.jsp</result>		
+		</action>
+		<action name="managerlogout" class="managerAction" method="logout">
+			<result name="success">/managerlogin.jsp</result>		
+		</action>
+		<action name="managerlistPlan" class="managerAction" method="listPlan">
+			<result name="success">/plan.jsp</result>		
+		</action>
+		<action name="managerlistAllKecheng" class="managerAction" method="listAllKecheng">
+			<result name="success">/managerallkecheng.jsp</result>		
+		</action>
+		<action name="managerlistKechengByTerm" class="managerAction" method="listKechengByTerm">
+			<result name="success">/managerallkecheng.jsp</result>		
+		</action>
+		<action name="manageraddKecheng" class="managerAction" method="addKecheng">
+			<result name="success">/managerallkecheng.jsp</result>		
+		</action>
+		<action name="managersearchkecheng" class="managerAction" method="searchKecheng">
+			<result name="success">/managerupdatekecheng.jsp</result>		
+		</action>
+		<action name="managerupdateKecheng" class="managerAction" method="updateKecheng">
+			<result name="success">/managerupdatekecheng.jsp</result>		
+		</action>
+		<action name="managergetInfo" class="managerAction" method="getInfo">
+			<result name="success">/managerinfo.jsp</result>		
+		</action>
+		<action name="managerupdateInfo" class="managerAction" method="updateInfo">
+			<result name="success">/managerinfo.jsp</result>		
+		</action>
+		<action name="managerlistAllPractice" class="managerAction" method="listAllPractice">
+			<result name="success">/managerallpractice.jsp</result>		
+		</action>
+		<action name="managerlistPracticeByTerm" class="managerAction" method="listPracticeByTerm">
+			<result name="success">/managerallpractice.jsp</result>		
+		</action>
+		<action name="manageraddPractice" class="managerAction" method="addPractice">
+			<result name="success">/managerallpractice.jsp</result>		
+		</action>
+		<action name="managersearchpractice" class="managerAction" method="searchPractice">
+			<result name="success">/managerupdatepractice.jsp</result>		
+		</action>
+		<action name="managerupdatePractice" class="managerAction" method="updatePractice">
+			<result name="success">/managerupdatepractice.jsp</result>		
+		</action>
+		<action name="managerlistDetail" class="managerAction" method="listDetail">
+			<result name="success">/plandetails.jsp</result>		
+		</action>
+		<action name="manageraddPlan" class="managerAction" method="addPlan">
+			<result name="success">/plan.jsp</result>		
+		</action>
+	</package>
+</struts>    
